@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>Welcome to Web-Technologies Lab-1</h1>
+</head>
+<body>
+    <h1 id="hello">LAB_01</h1>
+    <button id="button1" onclick="changeText()"> click-Me!</button>
+    <button id="button2" onclick="addText()">Add-Content</button>
+    <button id="button3" onclick="removeText()">Remove-Content</button>
+    <button id="button4" onclick="changeStyle()">Change-Style</button>
+    <button id="button5" onclick="toggleStyle()">Toggle-Button</button>
+    <h1 id="title">Hello JavaScript Styling</h1>
+    <button onclick="changingStyle()">Change Style</button>
+    <button onclick="togglingStyle()">Toggle Style</button>
+    <p id="para">This is para</p>
+    <h2 id="text">Hover over me!</h2>
+    <button onclick="buttonClicked()">Click Me</button>
+    <div id="box"
+         onmouseover="mouseOver()"
+         onmouseout="mouseOut()"
+         style="width:200px; height:100px; background-color:lightblue;">
+        Hover Box
+    </div>
+    <form onsubmit="formSubmit(event)">
+        <input type="text" placeholder="Enter name" required>
+        <button type="submit">Submit</button>
+    </form>
+        <h2 id="greeting"></h2>
+    <form onsubmit="validateForm(event)">
+        <label>
+            Name:
+            <input type="text" id="name">
+        </label>
+        <label>
+            Email:
+            <input type="text" id="email">
+        </label>
+        <button type="submit">Submit</button>
+    </form>
+    <button onclick="printPage()">Print Page</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
