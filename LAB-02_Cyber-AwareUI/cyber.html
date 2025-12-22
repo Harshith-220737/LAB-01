@@ -19,14 +19,13 @@
                     <li><a href="#tips">Tips</a></li>
                     <li><a href="#threats">Threats</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Form">Forms</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 <section class="hero" id="home">
     <div class="hero-content">
-        <h2>Stay Safe Online</h2>
-        <p>Learn how to protect yourself from cyber threats and keep your personal information secure.</p>
         <a href="#tips" class="btn">Get Tips</a>
     </div>
 </section>
@@ -76,6 +75,50 @@
         </div>
     </div>
 </section>
+<section class="form-section" id="Form">
+    <div class="container">
+        <h2>Cyber Awareness <br>Registration Form</h2>
+        <form action="#" method="post" class="cyber-form">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" 
+                   placeholder="Enter your first name" required>
+
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" 
+                   placeholder="Enter your last name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="example@gmail.com" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" 
+                   placeholder="10-digit mobile number"
+                   pattern="[0-9]{10}" required>
+
+            <label for="level">Cyber Awareness Level *</label>
+            <select id="level" name="level" required>
+                <option value="">-- Select --</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+
+            <label for="message">Why do you want to learn Cyber Security? *</label>
+            <textarea id="message" name="message" 
+                      rows="4" placeholder="Your message..." required></textarea>
+
+            <div class="checkbox">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">I agree to the terms and conditions *</label>
+            </div>
+            
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+</section>
+
 <!-- Footer Section -->
 <footer id="contact">
     <div class="container footer-container">
@@ -101,6 +144,5 @@
     </div>
     <p class="footer-bottom">© 2025 CyberSafe. All rights reserved.</p>
 </footer>
-
 </body>
 </html>

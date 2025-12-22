@@ -13,7 +13,6 @@
 .logo-img {
     width: 40px;
     height: 40px; 
-    object-fit: contain; 
     border-radius: 50%;
 }
 
@@ -24,7 +23,6 @@ header {
 }
 .container {
     width: 90%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -35,13 +33,11 @@ header {
     font-weight: bold;
 }
 .nav-links {
-    list-style: none;
     display: flex;
     gap: 20px;
 }
 .nav-links li a {
     color: white;
-    text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -49,13 +45,15 @@ header {
     color: #00adb5;
 }
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://www.ssl2buy.com/wp-content/uploads/2022/04/cyber-security-awareness.png') no-repeat center center/cover;
+    background: url('https://www.ssl2buy.com/wp-content/uploads/2022/04/cyber-security-awareness.png') no-repeat center center/cover;
+    opacity: 60%;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    font-weight: 900;
+    color: rgb(4, 3, 3);
 }
 .hero h2 {
     font-size: 48px;
@@ -73,10 +71,6 @@ header {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-.btn:hover {
-    background-color: #028a91;
 }
 .tips {
     padding: 80px 0;
@@ -97,10 +91,9 @@ header {
 .card {
     background-color: white;
     padding: 20px;
+    flex-wrap: wrap;
     width: 250px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 .card h3 {
     color: #00adb5;
@@ -112,7 +105,6 @@ header {
     line-height: 1.5;
 }
 .card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 .threats {
@@ -135,7 +127,6 @@ header {
     background-color: #2e2e50;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 .threat-card h3 {
     color: #00fff5;
@@ -146,7 +137,6 @@ header {
     line-height: 1.5;
 }
 .threat-card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 footer {
@@ -157,11 +147,8 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .footer-section {
@@ -209,3 +196,78 @@ footer {
     font-size: 14px;
     color: #888;
 }
+.form-section {
+    padding: 60px 20px;
+    background-color: #525352;
+    color: #ffffff;
+}
+
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #38bdf8; 
+}
+.cyber-form {
+    max-width: 500px;
+    margin: auto;
+    background: #2021213f;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cyber-form label {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #e5e7eb;
+}
+.cyber-form input,
+.cyber-form select,
+.cyber-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #1e293b;
+    color: #111010;
+    font-size: 14px;
+}
+.cyber-form input::placeholder,
+.cyber-form textarea::placeholder {
+    color: #040404;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cyber-form input:focus,
+.cyber-form select:focus,
+.cyber-form textarea:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 6px rgba(56, 189, 248, 0.6);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox input {
+    width: auto;
+    margin-right: 10px;
+}
+.cyber-form .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #020617;
+    transition: background 0.3s ease;
+}
+
+.cyber-form .btn:hover {
+    background-color: #0ea5e9;
+}
+
