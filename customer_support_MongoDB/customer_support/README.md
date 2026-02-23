@@ -56,17 +56,17 @@ GOOGLE_REDIRECT_URI=http://localhost/customer_support/public/callback.php
 
 ## 🗄️ MongoDB
 
-Database Name: customer_support Collection Name: users
-
+Database Name: customer_support Collection Name: `users`
 To check data:
-
-mongosh use customer_support db.users.find().pretty()
+    mongosh <br>
+    use customer_support <br>
+    `db.users.find().pretty()`
 
 ------------------------------------------------------------------------
 
 ## 🔐 Security Notes
 
--   Do not upload .env to GitHub
+-   Do not upload `.env` to GitHub
 -   Use .gitignore for sensitive files
 -   Enable MongoDB authentication in production
 
@@ -76,7 +76,7 @@ mongosh use customer_support db.users.find().pretty()
 
 ## 👨‍💻 Author
 
-- Harshith Bandari
-- B.Tech CSE Student
-- RGUKT-NUZVID
-- Created as a beginner learning project for: PHP + Google OAuth + MongoDB
+ `Harshith Bandari`
+ B.Tech CSE Student<br>
+ RGUKT-NUZVID<br>
+ Created as a beginner learning project for: PHP + Google OAuth + MongoDB
