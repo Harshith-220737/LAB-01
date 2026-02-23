@@ -76,7 +76,7 @@ mongosh use customer_support db.users.find().pretty()
 
 ## 👨‍💻 Author
 
-Harshith Bandari  
-B.Tech CSE Student 
-RGUKT-NUZVID 
-Created as a beginner learning project for: PHP + Google OAuth + MongoDB
+- Harshith Bandari
+- B.Tech CSE Student
+- RGUKT-NUZVID
+- Created as a beginner learning project for: PHP + Google OAuth + MongoDB
