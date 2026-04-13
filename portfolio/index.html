@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandari Harshith | Cybersecurity Portfolio</title>
+    <meta name="description" content="Cybersecurity-focused CS undergraduate — SOC, network analysis, threat detection, and AI security.">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════ SCROLL PROGRESS ═══════════════════════════════ -->
+<div id="progress-bar"></div>
+
+<!-- ═══════════════════════════════ NAVBAR ═══════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#hero">
+            B<span class="dot">.</span>HARSHITH
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-lg-2">
+                    <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<section id="hero">
+    <div class="blob-wrap" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+        <div class="blob b4"></div>
+    </div>
+    <div class="container hero-content">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div class="eyebrow" id="h-eye" style="opacity:0;transform:translateY(16px)">
+                    <i class="fa-solid fa-shield-halved fa-sm"></i>
+                    Cybersecurity &nbsp;·&nbsp; SOC &nbsp;·&nbsp; AI Security
+                </div>
+                <div class="hero-name" id="h-name" style="opacity:0;transform:translateY(20px)">
+                    <span class="first">BANDARI</span>
+                    <span class="last" id="typed-name">HARSHITH</span>
+                </div>
+                <p class="hero-title" id="h-title" style="opacity:0;transform:translateY(20px)">
+                    Cybersecurity Enthusiast &nbsp;|&nbsp; SOC &amp; AI Security
+                </p>
+                <p class="hero-tagline" id="h-tag" style="opacity:0;transform:translateY(20px)">
+                    CS undergraduate with hands-on experience in Security Operations Center workflows,
+                    network traffic analysis, and security tool development.
+                    Building AI-powered threat detection systems.
+                </p>
+                <div class="d-flex flex-wrap gap-3" id="h-cta" style="opacity:0;transform:translateY(20px)">
+                    <a href="#projects" class="btn-gold">
+                        <i class="fa-solid fa-terminal"></i> View Work
+                    </a>
+                    <a href="#contact" class="btn-outline-g">
+                        Get In Touch <i class="fa-solid fa-arrow-right fa-sm fa-fw"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Decorative stat panel -->
+            <div class="col-lg-4 d-none d-lg-flex justify-content-end pt-5" id="h-deco" style="opacity:0;transform:translateY(20px)">
+                <div style="position:relative;width:280px;height:340px;">
+                    <div style="position:absolute;top:0;right:0;background:var(--card-bg);border:1px solid var(--beige);border-radius:20px;padding:1.5rem;box-shadow:var(--sh-md);width:190px;">
+                        <p style="font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:.5rem;">CGPA — B.Tech</p>
+                        <p style="font-family:'Playfair Display',serif;font-size:3rem;font-weight:800;color:var(--charcoal);line-height:1;margin:0;">8<span style="color:var(--gold)">.8</span></p>
+                    </div>
+                    <div style="position:absolute;bottom:0;left:0;background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#fff;border-radius:20px;padding:1.25rem 1.5rem;box-shadow:var(--sh-gold);width:175px;">
+                        <p style="font-size:.7rem;opacity:.85;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.35rem;">PUC CGPA</p>
+                        <p style="font-size:1.6rem;font-weight:800;margin:0">9.7</p>
+                    </div>
+                    <div style="position:absolute;top:50%;left:4%;transform:translateY(-50%);background:var(--card-bg);border:1px solid var(--beige);border-radius:14px;padding:.9rem 1rem;box-shadow:var(--sh-sm);text-align:center;width:150px;">
+                        <i class="fa-solid fa-bug-slash fa-xl mb-2" style="color:var(--gold);display:block;"></i>
+                        <p style="font-size:.78rem;color:var(--charcoal-s);margin:0;">Bug Bounty<br>Submissions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+        <span>SCROLL</span>
+        <div class="line"></div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ ABOUT ═══════════════════════════════ -->
+<section id="about" class="section-pad">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-4 reveal">
+                <span class="section-eyebrow">Who I Am</span>
+                <div class="section-divider"></div>
+                <h2 class="section-title mb-3">About Me</h2>
+                <div class="d-flex flex-column gap-3 mt-4">
+                    <div class="stat-pill">
+                        <div class="num">6+</div>
+                        <div class="lbl">Projects Built</div>
+                    </div>
+                    <div class="stat-pill">
+                        <div class="num">CTF</div>
+                        <div class="lbl">Active Competitor</div>
+                    </div>
+                    <div class="stat-pill">
+                        <div class="num">AI</div>
+                        <div class="lbl">Security Focus</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 reveal d1">
+                <div class="about-card">
+                    <p style="font-size:1.05rem;line-height:1.9;margin-bottom:1.5rem;">
+                        Cybersecurity-focused Computer Science undergraduate with hands-on experience in
+                        <strong style="color:var(--gold-deep)">Security Operations Center (SOC)</strong> workflows,
+                        network traffic analysis, and security tool development. Built an
+                        <strong style="color:var(--gold-deep)">AI-powered SOC dashboard</strong> for real-time
+                        threat detection and actively publish CTF writeups and security experiments.
+                    </p>
+                    <p style="font-size:.95rem;line-height:1.85;margin-bottom:0;color:var(--muted);">
+                        Strong interest in threat detection, network security, and applying AI/ML to cybersecurity
+                        challenges. Currently pursuing B.Tech in CSE at RGUKT-IIIT Nuzvid (2024–2028).
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <span class="skill-badge"><i class="fa-brands fa-python me-1" style="color:#3776AB"></i>Python</span>
+                        <span class="skill-badge"><i class="fa-solid fa-network-wired me-1" style="color:var(--gold)"></i>Wireshark</span>
+                        <span class="skill-badge"><i class="fa-solid fa-shield me-1" style="color:var(--gold)"></i>SOC</span>
+                        <span class="skill-badge"><i class="fa-solid fa-bug me-1" style="color:var(--gold)"></i>CTF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ EDUCATION ═══════════════════════════════ -->
+<section id="education" class="section-pad section-alt">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-eyebrow">Academic Background</span>
+            <div class="section-divider mx-auto"></div>
+            <h2 class="section-title">Education</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="timeline">
+
+                    <div class="timeline-item reveal d1">
+                        <div class="timeline-dot"></div>
+                        <div class="edu-card">
+                            <span class="edu-year">2024 – 2028</span>
+                            <div class="edu-degree">B.Tech in Computer Science Engineering</div>
+                            <div class="edu-school"><i class="fa-solid fa-university me-1" style="color:var(--gold);font-size:.85rem;"></i>RGUKT-IIIT Nuzvid</div>
+                            <span class="edu-gpa">CGPA: 8.8</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal d2">
+                        <div class="timeline-dot"></div>
+                        <div class="edu-card">
+                            <span class="edu-year">2022 – 2024</span>
+                            <div class="edu-degree">Pre-University Course (PUC)</div>
+                            <div class="edu-school"><i class="fa-solid fa-university me-1" style="color:var(--gold);font-size:.85rem;"></i>RGUKT-IIIT Nuzvid</div>
+                            <span class="edu-gpa">CGPA: 9.7</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal d3">
+                        <div class="timeline-dot"></div>
+                        <div class="edu-card">
+                            <span class="edu-year">2021 – 2022</span>
+                            <div class="edu-degree">Secondary School Certificate (SSC)</div>
+                            <div class="edu-school"><i class="fa-solid fa-school me-1" style="color:var(--gold);font-size:.85rem;"></i>Vijetha High School, Kurnool</div>
+                            <span class="edu-gpa">587 / 600</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ PROJECTS ═══════════════════════════════ -->
+<section id="projects" class="section-pad">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-eyebrow">What I've Built</span>
+            <div class="section-divider mx-auto"></div>
+            <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4 reveal d1">
+                <div class="project-card">
+                    <div class="project-num">01</div>
+                    <h5 class="project-title">SOC with AI – Real-Time Threat Detection Dashboard</h5>
+                    <p class="project-desc">AI-powered Security Operations Center dashboard for real-time threat detection, alert correlation, and automated incident response workflows.</p>
+                    <span class="project-tag"><i class="fa-solid fa-brain me-1"></i>AI / SOC</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d2">
+                <div class="project-card">
+                    <div class="project-num">02</div>
+                    <h5 class="project-title">Penetration Testing Tools</h5>
+                    <p class="project-desc">Custom-built Python toolkit for penetration testing — automating reconnaissance, vulnerability scanning, and exploitation workflows.</p>
+                    <span class="project-tag"><i class="fa-brands fa-python me-1"></i>Python / Security</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d3">
+                <div class="project-card">
+                    <div class="project-num">03</div>
+                    <h5 class="project-title">AI-Assisted Network Traffic Monitoring Lab</h5>
+                    <p class="project-desc">Lab environment integrating Wireshark and ML models to identify anomalous network traffic patterns and detect potential intrusions in real time.</p>
+                    <span class="project-tag"><i class="fa-solid fa-network-wired me-1"></i>Network / ML</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d4">
+                <div class="project-card">
+                    <div class="project-num">04</div>
+                    <h5 class="project-title">Web Application Security Testing</h5>
+                    <p class="project-desc">Hands-on web app security assessments using Burp Suite, Nmap, and Nuclei — testing for OWASP Top 10 vulnerabilities including SQL injection and XSS.</p>
+                    <span class="project-tag"><i class="fa-solid fa-spider me-1"></i>Web Security</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d5">
+                <div class="project-card">
+                    <div class="project-num">05</div>
+                    <h5 class="project-title">PicoCTF Writeups &amp; Cybersecurity Blog</h5>
+                    <p class="project-desc">Active CTF competitor documenting solutions, techniques, and analysis across cryptography, forensics, binary exploitation, and web challenges.</p>
+                    <span class="project-tag"><i class="fa-solid fa-flag me-1"></i>CTF / Blog</span>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d6">
+                <div class="project-card">
+                    <div class="project-num">06</div>
+                    <h5 class="project-title">Crop Monitoring System – Kisan Hub</h5>
+                    <p class="project-desc">Smart agriculture platform leveraging sensor data, IoT integration, and data dashboards to help farmers monitor crop health and optimize yield.</p>
+                    <span class="project-tag"><i class="fa-solid fa-seedling me-1"></i>IoT / Agriculture</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+<section id="skills" class="section-pad section-alt">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-eyebrow">Technical Proficiency</span>
+            <div class="section-divider mx-auto"></div>
+            <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-4 reveal d1">
+                <div class="about-card h-100">
+                    <p class="skill-group-title"><i class="fa-solid fa-code me-2" style="color:var(--gold)"></i>Programming Languages</p>
+                    <div>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">Bash</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d2">
+                <div class="about-card h-100">
+                    <p class="skill-group-title"><i class="fa-solid fa-shield-halved me-2" style="color:var(--gold)"></i>Cybersecurity</p>
+                    <div>
+                        <span class="skill-badge">Network Analysis</span>
+                        <span class="skill-badge">SOC Workflows</span>
+                        <span class="skill-badge">Vulnerability Testing</span>
+                        <span class="skill-badge">Threat Detection</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d3">
+                <div class="about-card h-100">
+                    <p class="skill-group-title"><i class="fa-solid fa-screwdriver-wrench me-2" style="color:var(--gold)"></i>Security Tools</p>
+                    <div>
+                        <span class="skill-badge">Wireshark</span>
+                        <span class="skill-badge">Burp Suite</span>
+                        <span class="skill-badge">Nmap</span>
+                        <span class="skill-badge">Nuclei</span>
+                        <span class="skill-badge">Splunk</span>
+                        <span class="skill-badge">VirusTotal</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d4">
+                <div class="about-card h-100">
+                    <p class="skill-group-title"><i class="fa-solid fa-network-wired me-2" style="color:var(--gold)"></i>Networking Concepts</p>
+                    <div>
+                        <span class="skill-badge">TCP/IP</span>
+                        <span class="skill-badge">DNS</span>
+                        <span class="skill-badge">OSI Model</span>
+                        <span class="skill-badge">SQL Injection</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 reveal d5">
+                <div class="about-card h-100">
+                    <p class="skill-group-title"><i class="fa-brands fa-git-alt me-2" style="color:var(--gold)"></i>Technologies &amp; Frameworks</p>
+                    <div>
+                        <span class="skill-badge">Git / GitHub</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Spring Boot</span>
+                        <span class="skill-badge">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ ACHIEVEMENTS ═══════════════════════════════ -->
+<section id="achievements" class="section-pad">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-4 reveal">
+                <span class="section-eyebrow">Milestones</span>
+                <div class="section-divider"></div>
+                <h2 class="section-title mb-0">Achievements</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="d-flex flex-column gap-3">
+
+                    <div class="ach-item reveal d1">
+                        <div class="ach-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div>
+                            <p class="fw-700 mb-1" style="font-size:.95rem;">National Hackathon — Round 2</p>
+                            <p class="mb-0" style="font-size:.85rem;color:var(--muted);">Anurag University · Competed in Round 2 of a national-level hackathon challenge.</p>
+                        </div>
+                    </div>
+
+                    <div class="ach-item reveal d2">
+                        <div class="ach-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <div>
+                            <p class="fw-700 mb-1" style="font-size:.95rem;">NCC 'B' Certificate</p>
+                            <p class="mb-0" style="font-size:.85rem;color:var(--muted);">National Cadet Corps — attained the 'B' level certification demonstrating discipline and leadership.</p>
+                        </div>
+                    </div>
+
+                    <div class="ach-item reveal d3">
+                        <div class="ach-icon"><i class="fa-solid fa-flag-checkered"></i></div>
+                        <div>
+                            <p class="fw-700 mb-1" style="font-size:.95rem;">TryHackMe &amp; CTF Competitions</p>
+                            <p class="mb-0" style="font-size:.85rem;color:var(--muted);">Actively competing on TryHackMe and various CTF platforms. Published writeups for PicoCTF challenges.</p>
+                        </div>
+                    </div>
+
+                    <div class="ach-item reveal d4">
+                        <div class="ach-icon"><i class="fa-solid fa-bug"></i></div>
+                        <div>
+                            <p class="fw-700 mb-1" style="font-size:.95rem;">Bug Bounty Submissions</p>
+                            <p class="mb-0" style="font-size:.85rem;color:var(--muted);">Responsibly disclosed security vulnerabilities through bug bounty programs, contributing to safer software.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ INTERESTS ═══════════════════════════════ -->
+<section id="interests" class="section-pad section-alt">
+    <div class="container">
+        <div class="text-center mb-5 reveal">
+            <span class="section-eyebrow">What Drives Me</span>
+            <div class="section-divider mx-auto"></div>
+            <h2 class="section-title">Technical Interests</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-6 col-lg-3 reveal d1">
+                <div class="interest-card">
+                    <div class="interest-icon"><i class="fa-solid fa-tower-observation"></i></div>
+                    <h5 style="font-size:1rem;margin-bottom:.5rem;">SOC &amp; Threat Detection</h5>
+                    <p style="font-size:.82rem;color:var(--muted);margin:0;">Building detection rules and monitoring infrastructure for real-time security events.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 reveal d2">
+                <div class="interest-card">
+                    <div class="interest-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h5 style="font-size:1rem;margin-bottom:.5rem;">AI in Cybersecurity</h5>
+                    <p style="font-size:.82rem;color:var(--muted);margin:0;">Applying machine learning to threat hunting, anomaly detection, and automated response.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 reveal d3">
+                <div class="interest-card">
+                    <div class="interest-icon"><i class="fa-solid fa-chart-network"></i></div>
+                    <h5 style="font-size:1rem;margin-bottom:.5rem;">Network Analysis</h5>
+                    <p style="font-size:.82rem;color:var(--muted);margin:0;">Deep packet inspection, traffic profiling, and identifying C2 communication patterns.</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3 reveal d4">
+                <div class="interest-card">
+                    <div class="interest-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h5 style="font-size:1rem;margin-bottom:.5rem;">Security Automation</h5>
+                    <p style="font-size:.82rem;color:var(--muted);margin:0;">Scripting and automating repetitive security workflows with Python and Bash.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ CONTACT / FOOTER ═══════════════════════════════ -->
+<section id="contact">
+    <div class="container">
+
+        <div class="row justify-content-center text-center mb-5 reveal">
+            <div class="col-lg-6">
+                <span class="section-eyebrow">Let's Connect</span>
+                <div class="section-divider mx-auto mb-3"></div>
+                <h2 class="section-title mb-3">Get In Touch</h2>
+                <p style="font-size:.95rem;color:var(--muted);">
+                    Open to internships, collaborations, and security research opportunities.
+                    Feel free to reach out!
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-3 mb-5 reveal d1">
+            <div class="col-auto">
+                <a href="mailto:n220737@rguktn.ac.in" class="contact-pill">
+                    <i class="fa-solid fa-envelope"></i>
+                    n220737@rguktn.ac.in
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://github.com/harshith-n220737" target="_blank" rel="noopener" class="contact-pill">
+                    <i class="fa-brands fa-github"></i>
+                    github.com/harshith-n220737
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="https://www.google.com/maps/place/RGUKT+Nuzvid" target="_blank" rel="noopener" class="contact-pill">
+                    <i class="fa-solid fa-location-dot"></i>
+                    RGUKT Nuzvid, Andhra Pradesh
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 reveal d2">
+            <div class="col-auto">
+                <div class="d-flex gap-3">
+                    <a href="https://github.com/harshith-n220737" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/harshith-bandari" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://tryhackme.com" target="_blank" rel="noopener" class="social-btn" aria-label="TryHackMe"><i class="fa-solid fa-shield-halved"></i></a>
+                    <a href="mailto:n220737@rguktn.ac.in" class="social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <hr style="border-color:var(--beige);opacity:1;margin-bottom:2rem;">
+        <div class="text-center pb-4">
+            <p style="font-size:.82rem;color:var(--muted);margin:0;">
+                &copy; 2026 <strong style="color:var(--charcoal)">Bandari Harshith</strong> · N220737 · B.Tech CSE · RGUKT Nuzvid
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════ SCRIPTS ═══════════════════════════════ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>

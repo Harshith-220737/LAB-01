@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | HARSHITH.LAB</title>
+    <meta name="description" content="About Bandari Harshith — CSE student, Web Technologies enthusiast.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">HARSHITH<span>.</span>LAB</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experiments.html">Experiments</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <div class="section-divider mb-2"></div>
+            <p class="section-label mb-2">Profile</p>
+            <h1 class="mb-0">About Me</h1>
+        </div>
+    </section>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row g-5 reveal">
+
+                <!-- LEFT: Profile Card -->
+                <div class="col-lg-4">
+                    <div class="profile-card">
+                        <img src="https://ui-avatars.com/api/?name=BH&background=C9A96E&color=fff&size=200&bold=true&font-size=0.45" class="profile-avatar" alt="Bandari Harshith">
+                        <h3 class="mb-1" style="font-size:1.3rem;">Bandari Harshith</h3>
+                        <p class="section-label mb-3">Roll No. N220737</p>
+                        <div class="d-flex flex-column gap-2 mb-4">
+                            <div class="d-flex align-items-center gap-2 fs-body" style="font-size:0.88rem; color:var(--charcoal-soft);">
+                                <i class="fa-solid fa-graduation-cap" style="color:var(--gold); width:16px;"></i> B.Tech — CSE
+                            </div>
+                            <div class="d-flex align-items-center gap-2 fs-body" style="font-size:0.88rem; color:var(--charcoal-soft);">
+                                <i class="fa-solid fa-location-dot" style="color:var(--gold); width:16px;"></i> RGUKT Nuzvid, AP
+                            </div>
+                            <div class="d-flex align-items-center gap-2 fs-body" style="font-size:0.88rem; color:var(--charcoal-soft);">
+                                <i class="fa-solid fa-envelope" style="color:var(--gold); width:16px;"></i> n220737@rguktn.ac.in
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="contact.html" class="social-btn" aria-label="Contact"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: Bio + Skills -->
+                <div class="col-lg-8">
+
+                    <div class="mb-5">
+                        <div class="section-divider mb-2"></div>
+                        <h2 class="mb-3">Career Objective</h2>
+                        <p class="fs-body" style="font-size:1rem; line-height:1.8;">
+                            Passionate Computer Science student at RGUKT Nuzvid, dedicated to mastering the full spectrum of web technologies. 
+                            Aiming to build intuitive, performant, and aesthetically refined digital experiences — 
+                            combining solid fundamentals with modern UI/UX design principles.
+                        </p>
+                        <p class="fs-body" style="font-size:1rem; line-height:1.8;">
+                            Through this lab portfolio, I document every experiment — from foundational HTML to advanced JavaScript interfaces — 
+                            with structured theory, clear code, and real outputs.
+                        </p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="mb-5">
+                        <div class="section-divider mb-2"></div>
+                        <h2 class="mb-4">Technical Skills</h2>
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <p class="fw-600 mb-2 fs-body" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--charcoal);">Frontend</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="skill-badge"><i class="fa-brands fa-html5 me-1" style="color:#E44D26"></i>HTML5</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-css3-alt me-1" style="color:#264DE4"></i>CSS3</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-js me-1" style="color:#F0DB4F"></i>JavaScript ES6+</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-bootstrap me-1" style="color:#7952B3"></i>Bootstrap 5</span>
+                                    <span class="skill-badge">Responsive Design</span>
+                                    <span class="skill-badge">UI/UX Principles</span>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="fw-600 mb-2 fs-body" style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--charcoal);">Tools & Workflow</p>
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="skill-badge"><i class="fa-brands fa-git-alt me-1" style="color:#F05032"></i>Git / GitHub</span>
+                                    <span class="skill-badge">VS Code</span>
+                                    <span class="skill-badge">Figma Basics</span>
+                                    <span class="skill-badge">Chrome DevTools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Subjects -->
+                    <div>
+                        <div class="section-divider mb-2"></div>
+                        <h2 class="mb-4">Academic Focus</h2>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon-wrap"><i class="fa-solid fa-globe"></i></div>
+                                    <div>
+                                        <p class="mb-0 fw-600 fs-body" style="font-size:0.9rem;">Web Technologies</p>
+                                        <p class="mb-0 fs-body" style="font-size:0.8rem; color:var(--text-muted);">Core Lab Subject</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="contact-info-item">
+                                    <div class="contact-icon-wrap"><i class="fa-solid fa-microchip"></i></div>
+                                    <div>
+                                        <p class="mb-0 fw-600 fs-body" style="font-size:0.9rem;">Data Structures</p>
+                                        <p class="mb-0 fs-body" style="font-size:0.8rem; color:var(--text-muted);">Algorithms & DSA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-5">
+        <div class="container text-center">
+            <small class="fs-body" style="color:var(--text-muted); font-size:0.82rem;">
+                &copy; 2026 Bandari Harshith (N220737) &middot; Web Technologies Lab Record
+            </small>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

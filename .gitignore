@@ -1,0 +1,35 @@
+# OS files
+.DS_Store
+Thumbs.db
+.env.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# PHP dependencies
+/vendor/
+composer.lock
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build and cache
+.cache/
+dist/
+build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
